@@ -1,0 +1,382 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema-app1.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css">
+
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+
+ <body onLoad="MM_preloadImages('imagenes/TIERRA.jpg')">
+ 
+    <div data-role="page" id="Principal" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>CONTAMINACION</h1>
+    </div>
+   <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+    <div>
+     <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2> CONTAMINACION</h2>
+        <p>¿QUE ES?</p>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>TIPOS DE CONTAMINACION</h2>
+         <p>¿CUANTOS TIPOS DE CONTAMINACION EXISTEN?</p>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>CONSECUENCIAS</h2>
+         <p>¿CUALES SON LAS CONSECUENCIAS DE LA CONTAMINACION?</p>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>USO DE LAS 3 "R" </h2>
+         <p>¿EN QUE CONSISTE?</p>
+       </a>
+     </li>
+      <li class="ui-first-child ui-last-child">
+       <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>MEDIDAS PREVENTIVAS</h2>
+         <p>¿CUALES SON LAS MEDIDAS PREVENTIVAS?</p>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>CONTAMINACION EN MI ENTORNO</h2>
+         <p>EJEMPLOS DE CONTAMINACION</p>
+       </a>
+     </li>
+      
+     </ul>
+    </div>
+    <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+      <div>
+        <img src="imagenes/icono.png">
+      </div>
+      <div>
+       <h4>Aplicacion tres</h4>
+       <h4>Edna Sarahi Reyes Perez</h4>
+      </div>
+     </div>
+     </div>
+      <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1> DEFINICION</h1>
+      </div>
+      <div data-role="content" align="center">
+       <div>
+        <h2>La contaminación es la introducción de sustancias u otros elementos físicos en un medio que provocan que éste sea inseguro o no apto para su uso.El medio puede ser un ecosistema, un medio físico o un ser vivo. El contaminante puede ser una sustancia química, energía (como sonido, calor, luz o radiactividad).
+
+Es siempre una alteración negativa del estado natural del medio, y por lo general, se genera como consecuencia de la actividad humana considerándose una forma de impacto ambiental.</h2>
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','imagenes/TIERRA.jpg',1)"><img src="imagenes/CONTAMINACION.JPEG" name="Image11" width="240" height="224" id="Image11"></a> </div>
+      </div>
+      <div data-role="footer" data-theme="b" data-position="fixed">
+       <h4>Aplicacion tres,ESRP</h4>
+      </div>
+     </div>
+      
+      
+     <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1> TIPOS DE CONTAMINACION</h1>
+        </div>
+        <div data-role="content" align="center">
+         <div>
+          <!--colapsable-->
+      <div data-role="collapsible" data-content-theme="false">
+     <h1>CONTAMINACION DEL SUELO</h1>
+      <div>
+     <h3>La contaminación del suelo se refiere a la contaminación del suelo por medio de exceso de fertilizantes, productos químicos, insecticidas, herbicidas, pesticidas, etc provocan contaminación del suelo en la disminución de la calidad del suelo y es causada por la erosión del suelo, el exceso o déficit de humedad, disminución de la nutrientes para las plantas o microorganismos del suelo, y la fluctuación de la temperatura alta.
+
+La contaminación del suelo, en cierto modo, también conduce a la contaminación del aire y la contaminación del agua. La contaminación del suelo conduce naturalmente a la contaminación del aire por la liberación de estos compuestos en la atmósfera y que puedan explotar. La contaminación del suelo también contribuye a la contaminación del agua si las sustancias venenosas filtran a las aguas subterráneas, o si llega a desbordarse contaminado ríos, lagos u océanos.</h3>
+      <br>
+      </div>
+      <div>
+        <img src="imagenes/C-SUELO.jpg" width="266" height="167">
+          </div>
+        </div>
+           <div data-role="collapsible" data-content-theme="false">
+     <h1>CONTAMINACION DEL AIRE</h1>
+      <div>
+      <h3>El monóxido de carbono y óxido de azufre se consideran contaminantes primarios. Estos contaminantes sufren cambios químicos y causan efectos secundarios tales como smog. La contaminación del aire se define por la existencia y la integración de los compuestos tóxicos en el ambiente en concentraciones lo suficientemente altas como para causar daño a los seres humanos, los animales y el medio ambiente de la Tierra. </h3>
+      <br>
+      </div>
+      <div>
+        <img src="imagenes/C-AIRE.jpg" width="245" height="182">
+          </div>
+        </div>
+        <div data-role="collapsible" data-content-theme="false">
+     <h1>CONTAMINACION DEL AGUA</h1>
+      <div>
+     <h3>La contaminación del agua se refiere al agua que está siendo contaminada. Esto significa que el agua está contaminada con sustancias nocivas. Es el resultado de los productos químicos, basura y otras partículas extrañas que entran en el agua y contaminan el sistema. La contaminación afecta los cuerpos de agua, como estanques, lagos, ríos, mar y océanos y, en consecuencia, afecta a la vida de las plantas y los organismos que viven en estos cuerpos de agua. El agua contaminada no es adecuada y segura para beber y para otros procesos de consumo también. No es adecuado también para fines agrícolas e industriales. La contaminación del agua es el segundo problema ambiental más importante: el primero es la contaminación del aire.
+
+En los viejos tiempos, no se requeria filtrar el agua ya que era segura para beber. Con la modernización de la sociedad y el avance de la tecnología, hemos contaminado nuestro entorno sin preocupacion, ya que sentimos que están disponibles sin costo alguno. Pero a medida que han contaminado el medio ambiente, los recursos naturales son de libre disposición blandiendo un gran riesgo para nuestra salud y ahora tenemos que pagar sólo para usar los recursos naturales en su forma más segura.</h3>
+      <br>
+      </div>
+      <div>
+        <img src="imagenes/C-AGUA.jpg" width="246" height="192">
+          </div>
+        </div>
+        <div data-role="collapsible" data-content-theme="false">
+     <h1>CONTAMINACION VISUAL </h1>
+      <div>
+      <h3>La contaminación visual es un tipo de contaminación que parte de todo aquello que afecte o perturbe la visualización de algún sitio o rompan la estética de una zona o paisaje, y que puede incluso llegar a afectar a la salud de los individuos o zona donde se produzca el impacto ambiental es un problema que nos está afectando a todos.
+
+Se refiere al abuso de ciertos elementos “no arquitectónicos” que alteran la estética, la imagen del paisaje tanto rural como urbano, y que generan, a menudo, una sobreestimulación visual agresiva, invasiva y simultánea.
+
+Dichos elementos pueden ser carteles, cables, chimeneas, antenas, postes y otros elementos, que no provocan contaminación de por sí; pero mediante la manipulación indiscriminada del hombre (tamaño, orden, distribución) se convierten en agentes contaminantes.</h3>
+      <br>
+      </div>
+      <div>
+       <img src="imagenes/C-VISUAL.jpg" width="236" height="184">
+          </div>
+        </div>
+           </div>
+           <div data-role="collapsible" data-content-theme="false">
+     <h1>CONTAMINACION SONORA/ACUSTICA</h1>
+      <div>
+      <h3>Se llama contaminación acústica o contaminación sonora al exceso de sonido que altera las condiciones normales del ambiente en una determinada zona. Si bien el ruido no se acumula, traslada o mantiene en el tiempo como las otras contaminaciones, también puede causar grandes daños en la calidad de vida de las personas si no se controla bien o adecuadamente.
+
+El término "contaminación acústica" hace referencia al ruido (entendido como sonido excesivo y molesto), provocado por las actividades humanas (tráfico, industrias, locales de ocio, aviones,barcos, entre otros.) que produce efectos negativos sobre la salud auditiva, física y mental de los seres vivos.
+
+Este término está estrechamente relacionado con el ruido debido a que esta se da cuando el ruido es considerado como un contaminante, es decir, un sonido molesto que puede producir efectos nocivos fisiológicos y psicológicos para una persona o grupo de personas.
+
+Las principales causas de la contaminación acústica son aquellas relacionadas con las actividades humanas como el transporte, la construcción de edificios, obras públicas y las industrias, entre otras.</h3>
+      <br>
+      </div>
+      <div>
+       <img src="imagenes/C-AUDITIVA.jpg">
+          </div>
+        </div>
+           </div>
+           
+          <!--colapsable-->
+           
+          <div data-role="footer" data-theme="a" data-position="fixed">
+           <h4>Aplicacion tres,ESRP</h4>
+           </div>
+           </div>
+           </div>
+       
+     <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>CALENTAMIENTO GLOBAL</h1>
+      </div>
+      <div data-role="content" align="center">
+       <div>
+        
+<ul>
+<p> Los glaciares se están derritiendo, el nivel del mar aumenta, las selvas se están secando y la fauna y la flora lucha para seguir este ritmo. Cada vez es más evidente que los humanos han causado la mayor parte del calentamiento del siglo pasado, mediante la emisión de gases que retienen el calor, para potenciar nuestra vida moderna. Llamamos gases de invernadero y sus niveles son cada vez más altos, ahora y en los últimos 65.000 años.
+
+Llamamos al resultado calentamiento global pero está provocando una serie de cambios en el clima de la Tierra o patrones meteorológicos a largo plazo que varían según el lugar. Conforme la Tierra gira cada día, este nuevo calor gira a su vez recogiendo la humedad de los océanos, aumentando aquí y asentándose allá. Está cambiando el ritmo del clima al que todos los seres vivos nos hemos acostumbrado.
+
+¿Qué haremos para ralentizar este calentamiento? ¿Cómo vamos a sobrellevar los cambios que ya hemos puesto en marcha? Mientras intentamos entenderlo, la faz de la Tierra tal y como la conocemos, sus costas, bosques, haciendas y montañas nevadas están en vilo.</p>
+<li>Efecto invernadero
+
+El “efecto invernadero” es el calentamiento que se produce cuando ciertos gases de la atmósfera de la Tierra retienen el calor. Estos gases dejan pasar la luz pero mantienen el calor como las paredes de cristal de un invernadero.
+
+En primer lugar, la luz solar brilla en la superficie terrestre, donde es absorbida y, a continuación, vuelve a la atmósfera en forma de calor. En la atmósfera, los gases de invernadero retienen parte de este calor y el resto se escapa al espacio. Cuantos más gases de invernadero, más calor es retenido.
+
+Los científicos conocen el efecto invernadero desde 1824, cuando Joseph Fourier calculó que la Tierra sería más fría si no hubiera atmósfera. Este efecto invernadero es lo que hace que el clima en la Tierra sea apto para la vida. Sin él, la superficie de la Tierra sería unos 60 grados Fahrenheit más fría. En 1895, el químico suizo Svante Arrhenius descubrió que los humanos podrían aumentar el efecto invernadero produciendo dióxido de carbono, un gas de invernadero. Inició 100 años de investigación climática que nos ha proporcionado una sofisticada comprensión del calentamiento global.
+
+Los niveles de gases de efecto invernadero (GEI) han aumentado y descendido durante la historia de la Tierra pero han sido bastante constantes durante los últimos miles de años. Las temperaturas medias globales se han mantenido bastante constantes también durante este periodo de tiempo hasta hace poco. A través de la combustión de combustibles fósiles y otras emisiones de GEI, los humanos están aumentando el efecto invernadero y calentando la Tierra.
+
+Los científicos a menudo utilizan el término “cambio climático” en lugar de calentamiento global. Esto es porque, dado que la temperatura media de la Tierra aumenta, los vientos y las corrientes oceánicas mueven el calor alrededor del globo de modo que pueden enfriar algunas zonas, calentar otras y cambiar la cantidad de lluvia y de nieve que cae. Como resultado, el clima cambia de manera diferente en diferentes áreas.</li>
+
+<li>¿No son naturales los cambios de temperatura?
+
+La temperatura media global y las concentraciones de dióxido de carbono (uno de los principales gases de invernadero) han fluctuado en un ciclo de cientos de miles de años conforme ha ido variando la posición de la Tierra respecto del sol. Como resultado, se han producido las diferentes edades de hielo.
+
+Sin embargo, durante miles de años, las emisiones de GEI a la atmósfera se han compensado por los GEI que se absorben de forma natural. Por lo tanto, las concentraciones de GEI y la temperatura han sido bastante estables. Esta estabilidad ha permitido que la civilización humana se haya desarrollado en un clima consistente.
+
+En ocasiones, otros factores tienen una influencia breve sobre la temperatura global. Las erupciones volcánicas, por ejemplo, emiten partículas que enfrían temporalmente la superficie de la Tierra. No obstante, éstas no tienen un efecto que dure más de unos cuantos años. Otros ciclos, como El Niño, también se producen de manera breve y en ciclos predecibles.
+
+Ahora los humanos han aumentado la cantidad de dióxido de carbono en la atmósfera más de un tercio desde la revolución industrial. Estos cambios tan significativos se han producido históricamente en el trascurso de miles de años pero ahora se producen en tan solo unas décadas.</li>
+
+<li>¿Por qué es preocupante?
+
+El rápido aumento de los gases de invernadero es un problema porque está cambiando el clima tan rápido que algunos seres vivos no pueden adaptarse. Igualmente, un clima nuevo y más impredecible impone desafíos únicos para todo tipo de vida.
+
+Históricamente, el clima de la Tierra ha oscilado entre temperaturas como las que tenemos en la actualidad y temperaturas tan frías que grandes capas de hielo cubrían la mayor parte de Norteamérica y Europa. La diferencia entre las temperaturas globales medias y durante las edades de hielo tan solo es de 9 grados Fahrenheit y estas oscilaciones se produjeron lentamente, durante el trascurso de cientos de miles de años.
+
+En la actualidad, con las concentraciones de gases de invernadero aumentando, las capas de hielo que permanecen en la Tierra (como Groenlandia y la Antártida) también comienzan a derretirse. Esta agua sobrante podría hacer que aumente considerablemente el nivel del mar.
+
+Conforme sube el mercurio, el clima puede cambiar de forma inesperada. Además del aumento del nivel del mar, las condiciones meteorológicas pueden pasar a ser más extremas. Esto implica tormentas mayores y más intensas, más lluvia seguida de sequías más prolongadas e intensas (un desafío para los cultivos), cambios en los ámbitos en los que pueden vivir los animales y pérdida del suministro de agua que históricamente provenía de los glaciares.
+
+Los científicos ya están observando que algunos de estos cambios ocurren más rápido de lo que esperaban. Según el Grupo Intergubernamental de Expertos para el Cambio Climático, once de los doce años más calurosos desde que se tienen registros se produjeron entre 1995 y 2006.
+
+De hecho, el año 2015 fue el año más cálido desde que existen registros, que arrancaron en 1880. Así lo corroboró la Administración Nacional Oceánica y Atmosférica de Estados Unidos (NOAA) y la NASA en su informe anual. Además, el mes de diciembre de 2015 fue el más cálido de los últimos 136 años.
+
+Durante el pasado año la "temperatura promedio global" de las superficies terrestre y oceánica estuvo 0,9 grados Celsius por encima del promedio del siglo XX, alcanzando los 13,9 grados centígrados. Aún más, diez de los doce meses de 2015 registraron temperaturas récord.
+
+La mayor parte del calentamiento global se ha dado en los últimos 35 años, coincidiendo con el aumento de la emisión de gases de efecto invernadero por parte del hombre, según ha señalado la NASA.</li></div>
+<img src="imagenes/CALENTAMIENTO.jpg" width="273" height="152">
+       </div>
+      <div data-role="footer" data-theme="b" data-position="fixed">
+       <h4>Aplicacion tres,ESRP</h4>
+      </div>
+       </div>  
+       
+       
+       <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1> LAS 3 "R"</h1>
+      </div>
+      <div data-role="content" align="center">
+       <div>
+        <h2> ¿QUE SIGNIFICAN?</h2>
+        <img src="imagenes/REGLA.jpg" width="259" height="161">
+        <ul>
+        <li> REDUCIR </li>
+        <P>Cuando hablamos de reducir lo que estamos diciendo es que se debe tratar de reducir o simplificar el consumo de los productos directos, o sea, todo aquello que se compra y se consume, ya que esto tiene una relación directa con los desperdicios, a la vez que también la tiene con nuestro bolsillo. Por ejemplo, en vez de comprar 6 botellas pequeñas de una bebida, se puede conseguir una o dos grandes, teniendo el mismo producto pero menos envases sobre los que preocuparse.</P>
+        <li>REUTILIZAR </li>
+        <p>Al decir reutilizar, nos estamos refiriendo a poder volver a utilizar las cosas y darles la mayor utilidad posible antes de que llegue la hora de deshacernos de ellas, dado que al disminuir el volumen de la basura.
+
+Esta tarea suele ser la que menos atención recibe y es una de las mas importantes, que también ayuda mucho la economía en casa.</p>
+<li> RECICLAR</li>
+<P>La ultima de las tareas es la de reciclar, que consiste en el proceso de someter los materiales a un proceso en el cual se puedan volver a utilizar, reduciendo de forma verdaderamente significativa la utilización de nuevos materiales, y con ello, mas basura en un futuro.</P>
+        </ul>
+       </div>
+       </div>
+      <div data-role="footer" data-theme="b" data-position="fixed">
+       <h4>Aplicacion tres,ESRP</h4>
+      </div>
+       </div>
+       </div>
+      
+       <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>MEDIDAS PREVENTIVAS</h1>
+      </div>
+      <div data-role="content" align="center">
+       <div>
+        <h2>MEDIDAS A TOMAR PARA EVITAR LA CONTAMINACION AMBIENTAL</h2></div>
+        <img src="imagenes/PREV.png" width="192" height="190">
+        <ul>
+        <li>Crear conciencia ciudadana.</li>
+<li>No quemar ni talar plantas.</li>
+<li>Colocar la basura en los lugares apropiados.</li>
+<li>Regular el servicio de aseo urbano.</li>
+<li>Controlar el uso de fertilizantes y pesticidas.</li>
+<li>Crear vías de desagüe para las industrias que no lleguen a los mares o ríos utilizados para el servicio o consumo del ser humano o de los animales.</li>
+<li>Controlar los derrames accidentales de petróleo.</li>
+<li>Controlar los relaves mineros.</li>
+<li>Reciclar objetos (darles un nuevo uso).</li>
+<li>Tomar y generar conciencia de lo que está sucediendo.</li>
+<li>Realizar campañas de apoyo.</li>
+<li>Evitar el uso de aerosoles.</li>
+<li>Tener sentido de responsabilidad.</li>
+<div>
+<h2>PUEDES VISITAR TAMBIEN LA PAGINA DE GREENPEACE PARA CONOCER MAS ACERCA DE LA CONTAMIACION AMBIENTAL Y PROPUESTAS QUE ESTA ORGANIZACION TIENE</h2>
+<img src="imagenes/GREENPEACE.jpg" width="222" height="182">
+     
+       </div>
+        
+          <a href="https://www.greenpeace.org/mexico/es/" target="_self"> VISITA LA PAGINA DE GREENPEACE </a>
+
+        </ul>
+        
+       </div>
+      <div data-role="footer" data-theme="a" data-position="fixed">
+       <h4>Aplicacion tres,ESRP</h4>
+      </div>
+    </div>
+    
+    <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1> CONTAMINACION EN MI ENTORNO</h1>
+      </div>
+     
+      <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/1.jpg" alt="1" title="1" id="wows1_0"/></li>
+		<li><img src="data1/images/2.jpg" alt="2" title="2" id="wows1_1"/></li>
+		<li><img src="data1/images/3.jpg" alt="3" title="3" id="wows1_2"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/4.jpg" alt="http://wowslider.com/" title="4" id="wows1_3"/></a></li>
+		<li><img src="data1/images/5.jpg" alt="5" title="5" id="wows1_4"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="1"><span><img src="data1/tooltips/1.jpg" alt="1"/>1</span></a>
+		<a href="#" title="2"><span><img src="data1/tooltips/2.jpg" alt="2"/>2</span></a>
+		<a href="#" title="3"><span><img src="data1/tooltips/3.jpg" alt="3"/>3</span></a>
+		<a href="#" title="4"><span><img src="data1/tooltips/4.jpg" alt="4"/>4</span></a>
+		<a href="#" title="5"><span><img src="data1/tooltips/5.jpg" alt="5"/>5</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">css slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+      <div data-role="content" align="center">
+       <div>
+        <h2>ESTAS SON ALGUNAS DE MIS PROPUESTAS PARA EVITAR LA CONTAMINACION :</h2>
+        <ul>
+        <li> COLOCAR BOTES DE BASURA GRANDES Y DE UN MATERIAL RESISTENTE PARA EVITAR QUE LOS ANIMALES PUEDAN SACARLA</li>
+        <li> RECOMENDAR QUE EL CAMION DE LA BASURA PASE MAS TEMPRANO </li>
+        <li> SI SE TIENEN MASCOTAS Y LAS SACAN A PASEAR, LLEVAR CONSIGO BOLSAS PARA RECOGER SUS HECES </li>
+        <li>REPORTAR A VECINOS QUE ESTEN QUEMANDO BASURA</li>
+        <li> PLANTAR MAS ARBOLES EN LUGAR DE TALARLOS</li>
+        <li> REPORTAR A LAS PERSONAS QUE REALICEN RAYONES EN LAS PAREDES</li>
+        <li> RECOMENDAR QUE LOS SEÑORES DEL GAS NO LLEVEN TAN ALTO EL VOLUMEN DE SU ANUNCIO</li>
+        
+        </ul>
+         
+       </div>
+      </div>
+        
+       </div>
+      </div>
+      <div data-role="footer" data-theme="b" data-position="fixed">
+       <h4>Aplicacion tres,ESRP</h4>
+      </div>
+     </div>
+     
+    
+       
+       
+       
+</body>
+</html>
